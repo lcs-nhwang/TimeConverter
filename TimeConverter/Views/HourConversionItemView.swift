@@ -7,18 +7,25 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HourConversionItemView: View {
+    
+    // MARK: Stored properties
+    let conversionResult: HourConversion
+    
+    // MARK: Computed properties
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        HStack(spacing: 0) {
+            Text("\(conversionResult.timeInHours.formatted(.number.precision(.significantDigits(1...3)))) h")
+            
+            Text(" = \(conversionResult.timeInMinutes.formatted(.number.precision(.significantDigits(1...3)))) mins")
         }
-        .padding()
+        .font(.largeTitle)
+        
     }
+    
 }
 
 #Preview {
-    ContentView()
+    HourConversionItemView(conversionResult: HourConversion(timeInHours:7))
 }

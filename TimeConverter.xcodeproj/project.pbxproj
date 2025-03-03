@@ -6,17 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C26BFDDD2D75F24D009CD4A2 /* HourConversionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDDA2D75F24D009CD4A2 /* HourConversionItemView.swift */; };
+		C26BFDDE2D75F24D009CD4A2 /* TimeConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDDB2D75F24D009CD4A2 /* TimeConverterApp.swift */; };
+		C26BFDDF2D75F24D009CD4A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26BFDD72D75F24D009CD4A2 /* Preview Assets.xcassets */; };
+		C26BFDE02D75F24D009CD4A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26BFDD92D75F24D009CD4A2 /* Assets.xcassets */; };
+		C26BFDE72D75F2C9009CD4A2 /* HourConversionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDE62D75F2C9009CD4A2 /* HourConversionViewModel.swift */; };
+		C26BFDE92D75F2E4009CD4A2 /* HourConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDE82D75F2E4009CD4A2 /* HourConversion.swift */; };
+		C26BFDEB2D75F34D009CD4A2 /* HourConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDEA2D75F34D009CD4A2 /* HourConversionView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C26BFDC62D75F221009CD4A2 /* TimeConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26BFDD72D75F24D009CD4A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C26BFDD92D75F24D009CD4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C26BFDDA2D75F24D009CD4A2 /* HourConversionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourConversionItemView.swift; sourceTree = "<group>"; };
+		C26BFDDB2D75F24D009CD4A2 /* TimeConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverterApp.swift; sourceTree = "<group>"; };
+		C26BFDE62D75F2C9009CD4A2 /* HourConversionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourConversionViewModel.swift; sourceTree = "<group>"; };
+		C26BFDE82D75F2E4009CD4A2 /* HourConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourConversion.swift; sourceTree = "<group>"; };
+		C26BFDEA2D75F34D009CD4A2 /* HourConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourConversionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C26BFDC82D75F221009CD4A2 /* TimeConverter */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TimeConverter;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C26BFDC32D75F221009CD4A2 /* Frameworks */ = {
@@ -32,7 +41,7 @@
 		C26BFDBD2D75F221009CD4A2 = {
 			isa = PBXGroup;
 			children = (
-				C26BFDC82D75F221009CD4A2 /* TimeConverter */,
+				C26BFDDC2D75F24D009CD4A2 /* TimeConverter */,
 				C26BFDC72D75F221009CD4A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +52,52 @@
 				C26BFDC62D75F221009CD4A2 /* TimeConverter.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C26BFDD82D75F24D009CD4A2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFDDB2D75F24D009CD4A2 /* TimeConverterApp.swift */,
+				C26BFDD92D75F24D009CD4A2 /* Assets.xcassets */,
+				C26BFDD72D75F24D009CD4A2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C26BFDDC2D75F24D009CD4A2 /* TimeConverter */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFDE32D75F25A009CD4A2 /* Models */,
+				C26BFDE22D75F256009CD4A2 /* ViewModels */,
+				C26BFDE12D75F252009CD4A2 /* Views */,
+				C26BFDD82D75F24D009CD4A2 /* Preview Content */,
+			);
+			path = TimeConverter;
+			sourceTree = "<group>";
+		};
+		C26BFDE12D75F252009CD4A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFDEA2D75F34D009CD4A2 /* HourConversionView.swift */,
+				C26BFDDA2D75F24D009CD4A2 /* HourConversionItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C26BFDE22D75F256009CD4A2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFDE62D75F2C9009CD4A2 /* HourConversionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C26BFDE32D75F25A009CD4A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFDE82D75F2E4009CD4A2 /* HourConversion.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +114,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C26BFDC82D75F221009CD4A2 /* TimeConverter */,
 			);
 			name = TimeConverter;
 			packageProductDependencies = (
@@ -109,6 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26BFDDF2D75F24D009CD4A2 /* Preview Assets.xcassets in Resources */,
+				C26BFDE02D75F24D009CD4A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26BFDE72D75F2C9009CD4A2 /* HourConversionViewModel.swift in Sources */,
+				C26BFDE92D75F2E4009CD4A2 /* HourConversion.swift in Sources */,
+				C26BFDDD2D75F24D009CD4A2 /* HourConversionItemView.swift in Sources */,
+				C26BFDEB2D75F34D009CD4A2 /* HourConversionView.swift in Sources */,
+				C26BFDDE2D75F24D009CD4A2 /* TimeConverterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
